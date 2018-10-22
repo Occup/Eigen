@@ -25,6 +25,11 @@
 # define NEED_B1_RESTORED B1
 # undef B1
 #endif
+#ifdef Arduino_h
+   #undef max
+   #undef min
+   #undef abs
+#endif
 
 namespace std {
 	struct nothrow_t;
